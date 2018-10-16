@@ -181,6 +181,7 @@ a {
     padding: 4em 0;
     background-color: #f2f5f7;
 }
+
 #characteristics .characteristics-title {
     float: left;
     width: 90%;
@@ -189,10 +190,12 @@ a {
     margin: 0 auto;
     max-width: 1170px;
 }
+
 #characteristics .characteristics-title-left {
     display: inline-block;
     margin-top: -10px;
 }
+
 #characteristics .characteristics-title-right {
     float: right;
     display: inline-block;
@@ -243,6 +246,7 @@ a {
     margin: 0 auto;
     max-width: 1170px;
 }
+
 .usecase-title {
     width: 90%;
     margin: 0 auto;
@@ -258,6 +262,7 @@ a {
     padding: 2em 0;
     text-align: center;
 }
+
 #main-footer h2 {
     color: #0037a9;
 }
