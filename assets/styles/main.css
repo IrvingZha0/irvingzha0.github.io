@@ -58,7 +58,7 @@ a {
     padding: 10px;
 }
 
-@media (min-width: 766px) {
+@media (min-width: 768px) {
 
     #main-header .logo,
     #main-header nav a {
@@ -80,7 +80,7 @@ a {
     color: #fff;
 }
 
-@media (min-width: 766px) {
+@media (min-width: 768px) {
     #main-header nav a {
         font-size: 0.95em;
     }
@@ -110,7 +110,7 @@ a {
     display: none;
 }
 
-@media (min-width: 766px) {
+@media (min-width: 768px) {
     #intro .cta .splash {
         display: block;
         width: 200px;
@@ -180,10 +180,31 @@ a {
     flex-direction: column;
     padding: 4em 0;
     background-color: #f2f5f7;
-    height: 600px;
+}
+#characteristics .characteristics-title {
+    float: left;
+    width: 90%;
+    margin: 0 auto;
+    color: #0037a9;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+#characteristics .characteristics-title-left {
+    display: inline-block;
+    margin-top: -10px;
+}
+#characteristics .characteristics-title-right {
+    float: right;
+    display: inline-block;
+    padding: 20px 0px;
 }
 
-#characteristics h3 {
+#characteristics .card {
+    border: none;
+    /* background: none; */
+}
+
+#characteristics h5 {
     color: #0037a9;
     display: block;
     text-align: center;
@@ -191,65 +212,44 @@ a {
     font-weight: bold;
 }
 
-#characteristics ul {
-    width: 90%;
-    margin: 5% auto;
-}
-
-#characteristics li {
-    width: 33.5vw;
-    height: 33.5vw;
-    background: #ececec;
-    display: inline-block;
-}
-
-
-#characteristics ul li img {
-    display: block;
-    text-align: center;
-    position: relative;
-    z-index: 100;
-    margin: 20px auto 40px auto;
-}
-
-#characteristics li p {
-    display: block;
-    font-size: 12px;
-    text-align: center;
+#characteristics p {
     color: #4a4f66;
+    display: block;
+    text-align: center;
+    font-size: 12px;
 }
 
-@media screen and (max-width: 766px) {
-    #characteristics li:nth-child(-n+2) {
-        margin-bottom: 4%;
-    }
-
-    #characteristics li:nth-child(odd) {
-        margin-right: 3%;
-    }
-}
-
-@media screen and (min-width: 767px) {
-    #characteristics ul {
-        width: 90%
-    }
-
-    #characteristics li {
-        margin: 1%;
+@media (min-width: 0) {
+    .card-deck .card {
+        flex: 0 0 calc(100% - 30px) !important;
     }
 }
 
-@media screen and (min-width: 1000px) {
-    #characteristics ul {
-        width: 90%
-    }
-
-    #characteristics li {
-        width: 22%;
-        height: 300px;
+@media (min-width: 768px) {
+    .card-deck .card {
+        flex: 0 0 calc(50% - 40px) !important;
     }
 }
 
+@media (min-width: 1024px) {
+    .card-deck .card {
+        flex: 0 0 calc(25% - 30px) !important;
+    }
+}
+
+/* --- use cases ---*/
+#myCarousel {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+.usecase-title {
+    width: 90%;
+    margin: 0 auto;
+    color: #0037a9;
+    margin: 0 auto;
+    max-width: 1170px;
+}
 
 /* ---- Footer ---- */
 #main-footer {
@@ -257,4 +257,25 @@ a {
     flex: 1;
     padding: 2em 0;
     text-align: center;
+}
+#main-footer h2 {
+    color: #0037a9;
+}
+
+#main-footer p {
+    color: #4a4f66;
+    font-size: 12px;
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#main-footer .button {
+    align-items: center;
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #1f54ff;
+    border-radius: 30px;
+    width: 190px;
 }
