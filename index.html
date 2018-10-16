@@ -15,6 +15,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127499454-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
+
         function gtag() {
             dataLayer.push(arguments);
         }
@@ -28,12 +29,25 @@
 <body>
     <header id='main-header'>
         <div class='bcos-container'>
+            <!-- TODO: use the real fisco bcos link below -->
             <a class='logo' href='#'></a>
-            <nav>
-                <a href='#'>github</a>
-                <a href='#'>Wiki</a>
-                <a href='#'>Twitter</a>
-            </nav>
+            <ul class='social-icons'>
+                <li class='social-icon'>
+                    <a href='https://github.com/FISCO-BCOS' target='_blank'>
+                        <i class='github'></i>
+                    </a>
+                </li>
+                <li class='social-icon'>
+                    <a href='https://en.wikipedia.org/wiki/FISCO_(Open_Consortium)' target='_blank'>
+                        <i class='wikipedia'></i>
+                    </a>
+                </li>
+                <li class='social-icon'>
+                    <a href='https://twitter.com/FiscoBcos' target='_blank'>
+                        <i class='twitter'></i>
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
     <div id='intro'>
@@ -110,9 +124,17 @@
     </div>
 
     <div id="use-cases">
-        <div class="usecase-title">
-            <h2>Use cases</h2>
-        </div>
+        <div class="usecase-left">
+                <div class="usecase-contect_title">
+                    <h1>Use cases</h1>
+                </div>
+                <div class="usecase-content_text">
+                    <p>Promoting partnerships and collaborations among entities, private or public. Aim to improve
+                        collaboration efficiencies, user experiences and lower public cost and risk
+                    </p>
+                    <p>partnerships and collaborations among entities, private or public. </p>
+                </div>
+            </div>
 
         <div id="myCarousel" class="carousel slide">
             <ol class="carousel-indicators">
