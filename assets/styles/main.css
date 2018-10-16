@@ -24,7 +24,7 @@ a {
     text-decoration: none;
 }
 
-.container {
+.bcos-container {
     margin: 0 auto;
     width: 90%;
     max-width: 1170px;
@@ -46,7 +46,7 @@ a {
     padding: 0.85em 0;
 }
 
-#main-header .container {
+#main-header .bcos-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -149,7 +149,14 @@ a {
     background: #B79D55;
     color: #fff;
 } */
+/* ---- short line---- */
 
+.short-line {
+    margin-top: 10px;
+    width: 40px;
+    height: 2px;
+    background-color: #1844d3;
+}
 /* ---- Vision ---- */
 #vision {
     padding: 3em 0;
@@ -200,6 +207,10 @@ a {
     float: right;
     display: inline-block;
     padding: 20px 0px;
+}
+
+#characteristics .characteristics-title-right span{
+    font-size: 12px;
 }
 
 #characteristics .card {
