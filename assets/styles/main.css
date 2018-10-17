@@ -39,7 +39,6 @@ a {
 /* ---- Header ---- */
 #main-header {
     background: #152c83;
-    /* background-image: url('../header-bg.png'); */
     padding: 12px 0;
 }
 
@@ -102,7 +101,8 @@ a {
     align-items: center;
     background-image: url('../banner.jpg');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-position: center;
+    background-size: cover;
     height: 500px;
 }
 
@@ -187,6 +187,12 @@ a {
     background-color: #f2f5f7;
 }
 
+@media (max-width: 768px) {
+    #characteristics {
+        padding: 2em 0;
+    }
+}
+
 #characteristics .characteristics-title {
     float: left;
     width: 90%;
@@ -207,6 +213,18 @@ a {
     padding: 20px 0px;
 }
 
+@media (max-width: 768px) {
+    #characteristics .characteristics-title-left {
+        display: block;
+
+    }
+
+    #characteristics .characteristics-title-right {
+        float: none;
+
+    }
+}
+
 #characteristics .characteristics-title-right span {
     font-size: 12px;
 }
@@ -216,7 +234,7 @@ a {
     background: none;
 }
 
-#characteristics .card img{
+#characteristics .card img {
     margin: 0 auto;
     width: 70px;
     height: 70px
@@ -278,6 +296,16 @@ a {
     min-width: 250px;
 }
 
+@media (max-width: 768px) {
+    #myCarousel {
+        width: 100%;
+    }
+
+    .usecase-left {
+        display: block;
+    }
+}
+
 .usecase-contect_title {
     color: #0037a9;
     width: 250px;
@@ -316,7 +344,7 @@ a {
 #main-footer p {
     color: #4a4f66;
     font-size: 12px;
-    width: 400px;
+    max-width: 400px;
     height: 100px;
     text-align: center;
     margin: 0 auto;
