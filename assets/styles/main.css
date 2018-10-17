@@ -52,6 +52,7 @@ a {
 
 #main-header .logo {
     background-image: url('../logo.png');
+    background-size: 170px;
     height: 43px;
     width: 170px;
 }
@@ -212,7 +213,13 @@ a {
 
 #characteristics .card {
     border: none;
-    /* background: none; */
+    background: none;
+}
+
+#characteristics .card img{
+    margin: 0 auto;
+    width: 120px;
+    height: 120px
 }
 
 #characteristics h5 {
