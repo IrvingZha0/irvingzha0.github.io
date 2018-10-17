@@ -39,7 +39,7 @@ a {
 /* ---- Header ---- */
 #main-header {
     background: #152c83;
-    background-image: url('../header-bg.png');
+    /* background-image: url('../header-bg.png'); */
     padding: 12px 0;
 }
 
@@ -218,8 +218,8 @@ a {
 
 #characteristics .card img{
     margin: 0 auto;
-    width: 120px;
-    height: 120px
+    width: 70px;
+    height: 70px
 }
 
 #characteristics h5 {
@@ -228,6 +228,7 @@ a {
     text-align: center;
     margin-bottom: 0.35em;
     font-weight: bold;
+    font-size: 16px;
 }
 
 #characteristics p {
