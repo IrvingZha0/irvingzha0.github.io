@@ -33,19 +33,14 @@ a {
 .button {
     background: none;
     height: 50px;
-    border-radius: 3px;
     letter-spacing: 1px;
-    -webkit-transition: background 0.4s;
-    -moz-transition: background 0.4s;
-    transition: background 0.4s;
 }
 
 /* ---- Header ---- */
 #main-header {
     background: #152c83;
     background-image: url('../header-bg.png');
-
-    padding: 1em 0;
+    padding: 12px 0;
 }
 
 #main-header .bcos-container {
@@ -55,49 +50,23 @@ a {
     justify-content: space-between;
 }
 
-#main-header .logo,
-#main-header nav a {
-    padding: 10px;
-}
-
-@media (min-width: 768px) {
-
-    #main-header .logo,
-    #main-header nav a {
-        padding: 10px 15px;
-    }
-}
-
 #main-header .logo {
-    font-size: 1.35em;
-    color: #28415E;
     background-image: url('../logo.png');
     height: 43px;
     width: 170px;
 }
 
-#main-header nav a {
-    font-size: 0.65em;
-    text-transform: uppercase;
-    color: #fff;
-}
-
-@media (min-width: 768px) {
-    #main-header nav a {
-        font-size: 0.95em;
-    }
-}
-
 .social-icons {
     list-style: none;
-		margin: 0;
-		padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .social-icon {
     display: inline-block;
     margin: 0 5px;
 }
+
 .github {
     background-image: url('../github.png');
     background-size: 20px 20px;
@@ -106,6 +75,7 @@ a {
     width: 20px;
     height: 20px;
 }
+
 .wikipedia {
     background-image: url('../wikipedia.png');
     background-size: 20px 20px;
@@ -114,6 +84,7 @@ a {
     width: 20px;
     height: 20px;
 }
+
 .twitter {
     background-image: url('../twitter.png');
     background-size: 20px 20px;
@@ -122,12 +93,12 @@ a {
     width: 20px;
     height: 20px;
 }
+
 /* ---- Intro ---- */
 #intro {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4em 0;
     background-image: url('../banner.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -140,17 +111,6 @@ a {
     align-items: center;
     justify-content: center;
     color: #fff;
-}
-
-#intro .cta .splash {
-    display: none;
-}
-
-@media (min-width: 768px) {
-    #intro .cta .splash {
-        display: block;
-        width: 200px;
-    }
 }
 
 #intro .cta img {
@@ -193,6 +153,7 @@ a {
     height: 2px;
     background-color: #1844d3;
 }
+
 /* ---- Vision ---- */
 #vision {
     padding: 3em 0;
@@ -245,7 +206,7 @@ a {
     padding: 20px 0px;
 }
 
-#characteristics .characteristics-title-right span{
+#characteristics .characteristics-title-right span {
     font-size: 12px;
 }
 
@@ -294,6 +255,7 @@ a {
     width: 90%;
     max-width: 1170px;
 }
+
 #myCarousel {
     float: right;
     width: 60%;
@@ -308,11 +270,12 @@ a {
     min-width: 250px;
 }
 
-.usecase-contect_title{
+.usecase-contect_title {
     color: #0037a9;
     width: 250px;
 }
-.usecase-content_text p{
+
+.usecase-content_text p {
     color: #4a4f66;
     font-size: 12px;
     width: 250px;
