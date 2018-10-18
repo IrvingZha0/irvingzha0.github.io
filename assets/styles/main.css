@@ -99,7 +99,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../banner.jpg');
+    background-image: url('../banner-min.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -143,8 +143,7 @@ a {
 
 /* button hover */
 /* #intro .cta .button:hover, #intro .cta .button:focus {
-    background: #B79D55;
-    color: #fff;
+    background: red;
 } */
 /* ---- short line---- */
 
@@ -202,30 +201,30 @@ a {
     max-width: 1170px;
 }
 
-#characteristics .characteristics-title-left {
+#characteristics .characteristics-title_left {
     display: inline-block;
     margin-top: -10px;
 }
 
-#characteristics .characteristics-title-right {
+#characteristics .characteristics-title_right {
     float: right;
     display: inline-block;
     padding: 20px 0px;
 }
 
 @media (max-width: 768px) {
-    #characteristics .characteristics-title-left {
+    #characteristics .characteristics-title_left {
         display: block;
 
     }
 
-    #characteristics .characteristics-title-right {
+    #characteristics .characteristics-title_right {
         float: none;
 
     }
 }
 
-#characteristics .characteristics-title-right span {
+#characteristics .characteristics-title_right span {
     font-size: 12px;
 }
 
@@ -282,7 +281,7 @@ a {
     max-width: 1170px;
 }
 
-#myCarousel {
+.usecase-right {
     float: right;
     width: 60%;
     display: inline-block;
@@ -297,8 +296,9 @@ a {
 }
 
 @media (max-width: 768px) {
-    #myCarousel {
-        width: 100%;
+    .usecase-right {
+        width: 90%;
+        margin: 50px 5% 0 5%;
     }
 
     .usecase-left {
@@ -317,17 +317,65 @@ a {
     width: 250px;
 }
 
+.carousel-indicators {
+    bottom: 0 !important;
+}
 .carousel-indicators li {
-    margin: 0 5px !important;
-    width: 40px !important;
-    height: 5px !important;
-    border-radius: 0px !important;
+    margin: 0 2px !important;
+    border: none !important;
+    background-color: #e0e0e0 !important;
 }
 
 .carousel-indicators .active {
-    width: 40px !important;
-    height: 6px !important;
+    width: 10px !important;
+    height: 10px !important;
+    background-color: #0037a9 !important;
 }
+.carousel-prev_icon {
+    background-image: url('../arrow-left.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.carousel-next_icon {
+    background-image: url('../arrow-right.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.carousel-control {
+    width: 0 !important;
+    top: 40% !important;
+    margin: 0 0 0 -15px;
+}
+.carousel-control.left{
+    left: -15px !important;
+}
+.carousel-control.right{
+    right: -15px !important;
+}
+
+.carousel-desc {
+    text-align: center;
+    margin: 15px 0px;
+}
+.carousel-desc_title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #0037a9;
+}
+.carousel-desc_content {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.57;
+    text-align: center;
+    color: #4a4f66;
+}
+
 
 /* ---- Footer ---- */
 #main-footer {
