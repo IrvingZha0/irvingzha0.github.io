@@ -40,6 +40,10 @@ a {
 #main-header {
     background: #152c83;
     padding: 12px 0;
+    /* ----for sticky header---- */
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
 }
 
 #main-header .bcos-container {
