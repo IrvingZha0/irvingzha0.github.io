@@ -99,7 +99,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../banner-min.jpg');
+    background-image: url('../banner.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
