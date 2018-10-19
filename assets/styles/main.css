@@ -215,7 +215,6 @@ a {
     .vision-body_right img {
         height: auto;
         width: auto;
-        max-width: 450px;
         margin: 0;
     }
 }
@@ -396,7 +395,7 @@ a {
 
 .carousel-control {
     width: 0 !important;
-    top: 40% !important;
+    top: 45% !important;
     margin: 0 0 0 -15px;
 }
 
@@ -406,6 +405,16 @@ a {
 
 .carousel-control.right {
     right: -15px !important;
+}
+
+@media (max-width: 768px) {
+    .carousel-control.left {
+        left: -12px !important;
+    }
+
+    .carousel-control.right {
+        right: -7px !important;
+    }
 }
 
 .carousel-desc {
@@ -480,4 +489,10 @@ a {
     margin-bottom: -1px;
     border: 1px solid #e4e4e4;
     background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .partners-content .list li {
+        width: 90%;
+    }
 }
