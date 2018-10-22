@@ -513,14 +513,19 @@ a {
 }
 
 @media (max-width: 768px) {
+
+    .partners-content .list {
+        margin-left: -30px;
+    }
+
     .partners-content .list .cell {
         height: auto;
     }
 
     .partners-content .list li {
-        width: 70%;
+        width: 100%;
         text-align: -webkit-center;
-        margin: 10px 0 10px 10%;
+        margin: 10px auto;
     }
 
     .partners-content .list li img {
