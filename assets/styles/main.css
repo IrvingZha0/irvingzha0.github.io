@@ -175,9 +175,11 @@ a {
     color: #0037a9;
     width: 250px;
 }
-.vision-content_text{
+
+.vision-content_text {
     margin-top: 50px;
 }
+
 .vision-content_text p {
     color: #4a4f66;
     font-size: 12px;
@@ -484,21 +486,43 @@ a {
     overflow: auto;
     list-style: none;
     margin-bottom: 50px;
+    text-align: center;
+    display: block;
 }
 
 .partners-content .list li {
     vertical-align: middle;
     float: left;
-    width: 20%;
+    width: 15%;
     height: auto;
-    margin-right: -1px;
-    margin-bottom: -1px;
-    border: 1px solid #e4e4e4;
-    background-color: #fff;
+    margin: 0 15px;
+}
+
+.partners-content .list .cell {
+    width: auto;
+    height: 60px;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+@media (max-width: 890px) {
+    .partners-content .list li {
+        width: 14%;
+    }
 }
 
 @media (max-width: 768px) {
+    .partners-content .list .cell {
+        height: auto;
+    }
+
     .partners-content .list li {
-        width: 90%;
+        width: 70%;
+        text-align: -webkit-center;
+        margin: 10px 0 10px 10%;
+    }
+
+    .partners-content .list li img {
+        width: 50%;
     }
 }
