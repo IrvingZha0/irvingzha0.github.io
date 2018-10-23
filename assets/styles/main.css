@@ -12,6 +12,7 @@ body {
         Helvetica, Arial, "Lucida Grande", sans-serif;
     color: #3a3a3a;
     margin: 0 auto;
+    
 }
 
 img {
@@ -72,31 +73,9 @@ a {
     margin: 0 5px;
 }
 
-.github {
-    background-image: url('../github.png');
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
-    display: block;
-    width: 20px;
-    height: 20px;
-}
-
-.wikipedia {
-    background-image: url('../wikipedia.png');
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
-    display: block;
-    width: 20px;
-    height: 20px;
-}
-
-.twitter {
-    background-image: url('../twitter.png');
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
-    display: block;
-    width: 20px;
-    height: 20px;
+.social-icon i {
+    color: #fff;
+    font-size: 16px;
 }
 
 /* ---- Intro ---- */
@@ -144,12 +123,9 @@ a {
     color: #fff;
     background-color: #1f54ff;
     border-radius: 30px;
+    text-decoration: none;
 }
 
-/* button hover */
-/* #intro .cta .button:hover, #intro .cta .button:focus {
-    background: red;
-} */
 /* ---- short line---- */
 
 .short-line {
@@ -305,6 +281,20 @@ a {
     font-size: 12px;
 }
 
+#characteristics .whitepaper-container {
+    text-align: center;
+}
+
+#characteristics .whitepaper {
+    align-items: center;
+    padding: 10px 45px;
+    color: #fff;
+    background-color: #1f54ff;
+    border-radius: 30px;
+    width: 190px;
+    text-decoration: none;
+}
+
 @media (min-width: 0) {
     .card-deck .card {
         flex: 0 0 calc(100% - 30px) !important;
@@ -324,151 +314,95 @@ a {
 }
 
 /* --- use cases ---*/
-#use-cases {
+#use-cases {}
+
+.usecase-container {}
+
+.usecase_header {
+    padding: 2em 0;
     background-color: #f2f5f7;
 }
 
-.usecase-container {
-    padding: 3em 0;
-    margin: 0 auto;
+.usecase_header-container {
     width: 90%;
     max-width: 1170px;
-}
-
-.usecase_right {
-    float: right;
-    width: 60%;
-    display: inline-block;
-}
-
-.usecase_left {
-    width: 25%;
-    vertical-align: top;
-    display: inline-block;
-    margin-right: 10px;
-    min-width: 250px;
-}
-
-@media (max-width: 768px) {
-    .usecase_right {
-        width: 90%;
-        margin: 50px 5% 0 5%;
-    }
-
-    .usecase_left {
-        display: block;
-    }
+    margin: 0 auto;
 }
 
 .usecase-contect_title {
     color: #0037a9;
-    width: 250px;
 }
 
 .usecase-content_text p {
     color: #4a4f66;
     font-size: 12px;
-    width: 250px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
-.carousel-indicators {
-    bottom: 0 !important;
+.usecase-body .ub-bg {
+    position: relative;
+    height: 300px;
+    margin: 30px 0;
+    /* opacity: .95; */
 }
 
-.carousel-indicators li {
-    margin: 0 2px !important;
-    border: none !important;
-    background-color: #e0e0e0 !important;
-}
-
-.carousel-indicators .active {
-    width: 10px !important;
-    height: 10px !important;
-    background-color: #0037a9 !important;
-}
-
-.carousel-prev_icon {
-    background-image: url('../arrow-left.png');
-    background-size: 20px 20px;
+.usecase-body .supply-chain {
+    background-image: url('../supplychain_web.png');
     background-repeat: no-repeat;
-    display: block;
-    width: 20px;
-    height: 20px;
+    background-position: center;
+    background-size: cover;
 }
 
-.carousel-next_icon {
-    background-image: url('../arrow-right.png');
-    background-size: 20px 20px;
+.usecase-body .arbitration {
+    background-image: url('../arbitration_web.png');
     background-repeat: no-repeat;
-    display: block;
-    width: 20px;
-    height: 20px;
+    background-position: center;
+    background-size: cover;
 }
 
-.carousel-control {
-    width: 0 !important;
-    top: 45% !important;
-    margin: 0 0 0 -15px;
-    opacity: 1 !important;
+.usecase-body .clubcard {
+    background-image: url('../clubcard.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.carousel-control.left {
-    left: -15px !important;
-}
 
-.carousel-control.right {
-    right: -15px !important;
-}
-
-@media (max-width: 768px) {
-    .carousel-control.left {
-        left: -12px !important;
-    }
-
-    .carousel-control.right {
-        right: -7px !important;
-    }
-}
-
-.carousel-desc {
-    text-align: center;
-    margin: 15px 0px;
-}
-
-.carousel-desc_title {
-    font-size: 16px;
-    font-weight: bold;
-    color: #0037a9;
-}
-
-.carousel-desc_content {
-    font-size: 12px;
-    line-height: 1.57;
-    text-align: center;
-    color: #4a4f66;
-    display: block;
-    width: 320px;
-    margin: 0 auto;
-}
-
-.carousel-inner>.item>img {
+.usecase-body .usecase-body_content {
+    position: absolute;
+    bottom: 0;
     width: 100%;
 }
 
+.usecase-body .usecase-body_content h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.usecase-body .usecase-body_content p {
+    color: #fff;
+    font-size: 12px;
+    max-width: 400px;
+    text-align: center;
+    margin: 20px auto;
+    width: 90%;
+}
+
 /* ---- Footer ---- */
-#main-footer {
-    background: #d9e4ea;
+#organizations {
+    background: #f2f5f7;
     flex: 1;
-    padding: 2em 0;
+    padding: 3em 0;
     text-align: center;
 }
 
-#main-footer h2 {
+#organizations h2 {
     color: #0037a9;
 }
 
-#main-footer p {
+#organizations p {
     color: #4a4f66;
     font-size: 12px;
     max-width: 400px;
@@ -477,13 +411,14 @@ a {
     margin: 0 auto;
 }
 
-#main-footer .button {
+#organizations .getfb {
     align-items: center;
     padding: 10px 30px;
     color: #fff;
     background-color: #1f54ff;
     border-radius: 30px;
     width: 190px;
+    text-decoration: none;
 }
 
 .partners-content {
@@ -539,4 +474,41 @@ a {
     .partners-content .list li img {
         width: 50%;
     }
+}
+
+/* ----about us---- */
+#about-us .bcos-container {
+    padding: 3em 0;
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+#about-us .about-fb_container {
+    display: inline-block;
+    margin-right: 3%;
+}
+
+#about-us .follow-fb_container {}
+
+#about-us .about-fb_container h2,
+#about-us .follow-fb_container h2 {
+    color: #0037a9;
+}
+
+/* ----contact us---- */
+
+#contact-us {
+    background: #f2f5f7;
+}
+
+#contact-us .contact-us_container {
+    padding: 2em 0;
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+#contact-us .contact-us_container h2 {
+    color: #0037a9;
 }
