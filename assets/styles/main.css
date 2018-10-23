@@ -44,6 +44,7 @@ a {
     position: fixed;
     width: 100%;
     z-index: 99999;
+    opacity: .95;
 }
 
 #main-header .bcos-container {
@@ -233,7 +234,6 @@ a {
     display: flex;
     flex-direction: column;
     padding: 4em 0;
-    background-color: #f2f5f7;
 }
 
 @media (max-width: 768px) {
@@ -325,6 +325,10 @@ a {
 
 /* --- use cases ---*/
 #use-cases {
+    background-color: #f2f5f7;
+}
+
+.usecase-container {
     padding: 3em 0;
     margin: 0 auto;
     width: 90%;
@@ -406,6 +410,7 @@ a {
     width: 0 !important;
     top: 45% !important;
     margin: 0 0 0 -15px;
+    opacity: 1 !important;
 }
 
 .carousel-control.left {
@@ -446,7 +451,9 @@ a {
     width: 320px;
     margin: 0 auto;
 }
-
+.carousel-inner>.item>img {
+    width: 100%;
+}
 
 /* ---- Footer ---- */
 #main-footer {
