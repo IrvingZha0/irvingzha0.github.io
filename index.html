@@ -7,11 +7,13 @@
     <link rel='stylesheet' type='text/css' href='./assets/styles/main.css'>
     <link rel='stylesheet' type='text/css' href='./assets/styles/bootstrap.min.css'>
     <link rel='stylesheet' type='text/css' href='./assets/styles/twitter-b_3.3.7.css'>
+    <link rel="stylesheet" type='text/css' href='./assets/styles/font-awesome-4.7.0/css/font-awesome.min.css'>
     <meta name='viewport' content='width=device-width, maximum-scale=1, minimum-scale=1, initial-scale=1, user-scalable=no, shrink-to-fit=no'>
     <title>FISCO BCOS</title>
 </head>
 
 <body>
+    <!-- header -->
     <header id='main-header'>
         <div class='bcos-container'>
             <!-- TODO: use the real fisco bcos link below -->
@@ -19,22 +21,23 @@
             <ul class='social-icons'>
                 <li class='social-icon'>
                     <a href='https://github.com/FISCO-BCOS' target='_blank'>
-                        <i class='github'></i>
+                        <i class="fa fa-github-square"></i>
                     </a>
                 </li>
                 <li class='social-icon'>
                     <a href='https://en.wikipedia.org/wiki/FISCO_(Open_Consortium)' target='_blank'>
-                        <i class='wikipedia'></i>
+                        <i class="fa fa-wikipedia-w"></i>
                     </a>
                 </li>
                 <li class='social-icon'>
                     <a href='https://twitter.com/FiscoBcos' target='_blank'>
-                        <i class='twitter'></i>
+                        <i class="fa fa-twitter-square"></i>
                     </a>
                 </li>
             </ul>
         </div>
     </header>
+    <!-- introduction -->
     <div id='intro'>
         <div class='cta bcos-container'>
             <h1>The Building Block of Open Consortium Chain</h1>
@@ -44,6 +47,7 @@
             </a>
         </div>
     </div>
+    <!-- vision -->
     <div id='vision'>
         <div class='vision-header'>
             OUR VISION
@@ -70,53 +74,46 @@
 
         </div>
     </div>
+    <!-- use cases -->
     <div id='use-cases'>
         <div class="usecase-container">
-            <div class='usecase_left'>
-                <div class='usecase-contect_title'>
-                    <h1>Use cases</h1>
-                </div>
-                <div class='usecase-content_text'>
-                    <p>Since its launch, dozens of use cases have been implemented based on
-                        the platform.
-                    </p>
+            <div class='usecase_header'>
+                <div class='usecase_header-container'>
+                    <div class='usecase-contect_title'>
+                        <h1>Use cases</h1>
+                    </div>
+                    <div class='usecase-content_text'>
+                        <p>Since its launch, dozens of use cases have been implemented based on the platform.
+                            <a href="./assets/docs/FISCO BCOS - Featured Cases.pdf" target="_blank"> <i class='fa fa-download'></i>
+                                More Cases </a>
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="usecase_right">
-                <div id='myCarousel' class='carousel slide'>
-                    <ol class='carousel-indicators'>
-                        <li data-target='#myCarousel' data-slide-to='0' class='active'></li>
-                        <li data-target='#myCarousel' data-slide-to='1'></li>
-                        <li data-target='#myCarousel' data-slide-to='2'></li>
-                    </ol>
-                    <div class='carousel-inner'>
-                        <div class='item car-item-1 active'>
-                            <img src='./assets/supplychain.png' alt='supply chain'>
-                        </div>
-                        <div class='item car-item-2'>
-                            <img src='./assets/clubcard.png' alt='club card'>
-                        </div>
-                        <div class='item car-item-3'>
-                            <img src='./assets/arbitration.png' alt='arbitration chain'>
-                        </div>
+            <div class="usecase-body">
+                <div class="supply-chain ub-bg">
+                    <div class="usecase-body_content">
+                        <h2>Supply Chain</h2>
+                        <p>Promoting partnerships and collaborations among entities, private or public using the FISCO BCOS
+                            platform.</p>
                     </div>
-                    <a class='left carousel-control' href='#myCarousel' role='button' data-slide='prev'>
-                        <i class='carousel-prev_icon'></i>
-                    </a>
-                    <a class='right carousel-control' href='#myCarousel' role='button' data-slide='next'>
-                        <i class='carousel-next_icon'></i>
-                    </a>
                 </div>
-                <div class='carousel-desc'>
-                    <div class='carousel-desc_title'>Supply Chain Finance</div>
-                    <span class='carousel-desc_content'>Promoting partnerships and collaborations among entities,
-                        private
-                        or
-                        public using the FISCO BCOS platform. </span>
+                <div class="arbitration ub-bg">
+                    <div class="usecase-body_content">
+                        <h2>Judicial Services</h2>
+                        <p>Guangzhou Arbitration Commission, WeBank, and Hangzhou Yibi the "arbitration blockchain".</p>
+                    </div>
+                </div>
+                <div class="clubcard ub-bg">
+                    <div class="usecase-body_content">
+                        <h2>Loyalty Points</h2>
+                        <p>An alliance is a relationship among people, groups, or states that have joined together for mutual benefit.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- characteristics -->
     <div id='characteristics'>
         <div class='characteristics-title'>
             <div class='characteristics-title_right'>
@@ -161,8 +158,14 @@
                 </div>
             </div>
         </div>
+        <div class="whitepaper-container">
+            <a class='whitepaper' href='./assets/docs/FISCO BCOS Whitepaper(EN).pdf' target='_blank'>
+                <i class='fa fa-download'> Get Whitepaper</i>
+            </a>
+        </div>
     </div>
-    <div id='main-footer'>
+    <!-- organizations -->
+    <div id='organizations'>
         <div class='bcos-container'>
             <h2>Organizations Using FISCO BCOS</h2>
             <p>FISCO BCOS was developed by FISCO in collaboration with over 8 technology and industry partners. Some of
@@ -190,9 +193,37 @@
                     </ul>
                 </div>
             </div>
-            <a class='button' href='https://github.com/FISCO-BCOS' target='_blank'>
+            <a class='getfb' href='https://github.com/FISCO-BCOS' target='_blank'>
                 <span>Get FISCO BCOS</span>
             </a>
+        </div>
+    </div>
+    <!-- about us -->
+    <div id="about-us">
+        <div class='bcos-container row'>
+            <div class="about-fb_container col-sm">
+                <h2>About Us</h2>
+                <p>The Financial Blockchain Shenzhen Consortium (FISCO) is a nonprofit organization
+                    jointly established by multiple financial institutions and financial information service
+                    companies on May 31, 2016. The FISCO membership is open to financial institutions
+                    and financial information service companies that agree to abide by the Consortium
+                    constitution.</p>
+            </div>
+            <div class="follow-fb_container col-sm">
+                <h2>Follow us on Twitter</h2>
+                <a href='https://twitter.com/FiscoBcos' target='_blank'>
+                    <i class='fa fa-twitter'>Follow us @FiscoBcos</i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- contact us -->
+    <div id="contact-us">
+        <div class="contact-us_container">
+            <p>
+                If you have more questions,
+                <a href="mailto:info@fisco-bcos.com?subject=Inquiry about FISCO BCOS" target="_top">email us</a>
+            </p>
         </div>
     </div>
 </body>
