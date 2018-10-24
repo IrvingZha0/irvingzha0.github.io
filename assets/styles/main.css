@@ -78,9 +78,20 @@ a {
     font-size: 16px !important;
 }
 
-.social-icon i {
+.social-icon .fa-phone-square {
     color: #fff;
-    font-size: 16px;
+    font-size: 16px !important;
+}
+
+.contact-us-botton {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    color: #fff !important;
+    background-color: #1f54ff;
+    border-radius: 5px;
+    text-decoration: none;
+    height: 30px;
 }
 
 /* ---- Intro ---- */
@@ -146,30 +157,36 @@ a {
 
 /* ---- Vision ---- */
 #vision {
-    padding: 3em 0;
-    margin: 0 auto;
-    width: 90%;
-    max-width: 1170px;
+    padding: 1em 0;
+    background-color: #fafafa;
 }
 
 .vision-header {
     font-size: 12px;
     color: #0037a9;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1170px;
+}
+
+.vision-body {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1170px;
 }
 
 .vision-contect_title {
     color: #0037a9;
-    width: 250px;
+    width: 100%;
 }
 
 .vision-content_text {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .vision-content_text p {
     color: #4a4f66;
-    font-size: 12px;
-    width: 250px;
+    font-size: 16px;
 }
 
 .vision-body_left {
@@ -202,7 +219,7 @@ a {
 
 .vision-body_right img {
     height: 400px;
-    margin: -200px 0 0 50px;
+    margin: -80px 0 0 0;
 }
 
 @media (max-width: 768px) {
@@ -218,7 +235,7 @@ a {
 #characteristics {
     display: flex;
     flex-direction: column;
-    padding: 2em 0;
+    padding: 20px 0 0 0;
     background-color: #fff;
 }
 
@@ -262,12 +279,17 @@ a {
     font-size: 12px;
 }
 
+.card {
+    border: none !important;
+}
+
 .card-body {
     padding: 0 1rem !important;
 }
 
 #characteristics .card {
     background: none;
+    margin-bottom: 20px;
 }
 
 #characteristics .card img {
@@ -332,7 +354,7 @@ a {
 
 .usecase_header {
     padding: 2em 0;
-    background-color: #f2f5f7;
+    background-color: #fff;
 }
 
 .usecase_header-container {
@@ -347,7 +369,7 @@ a {
 
 .usecase-content_text p {
     color: #4a4f66;
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 20px;
 }
 
@@ -395,18 +417,27 @@ a {
 
 .usecase-body .usecase-body_content p {
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     max-width: 400px;
     text-align: center;
     margin: 20px auto;
     width: 90%;
 }
 
+.more-cases i {
+    font-size: 16px;
+}
+
+.more-cases {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
 /* ---- organizations ---- */
 #organizations {
-    background: #f2f5f7;
+    background: #fff;
     flex: 1;
-    padding: 3em 0;
+    padding: 0.5em 0;
     text-align: center;
 }
 
@@ -441,7 +472,7 @@ a {
 .partners-content .list {
     overflow: auto;
     list-style: none;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
     text-align: center;
     display: block;
 }
@@ -490,8 +521,12 @@ a {
 }
 
 /* ----about us---- */
+#about-us {
+    background-color: #fafafa;
+}
+
 #about-us .bcos-container {
-    padding: 3em 0;
+    padding: 1em 0;
     max-width: 1170px;
     margin: 0 auto;
     width: 90%;
@@ -501,8 +536,6 @@ a {
     display: inline-block;
 }
 
-#about-us .follow-fb_block {}
-
 #about-us .about-fb_container h2 {
     color: #0037a9;
 }
@@ -510,11 +543,19 @@ a {
 .join-us_block,
 .join-community_block,
 .follow-fb_block {
-    /* border: 1px red solid; */
+    border: 1px #f2f5f7 solid;
+    margin: 10px;
+    box-shadow: 0 5px 15px #f2f5f7;
+    padding: 0 0 10px 0px;
+}
+
+.follow-fb_block {
+    margin-top: 65px;
+    margin-left: 7.4%;
 }
 
 #about-us h3 {
-    color: #1f54ff;
+    color: #0037a9;
 }
 
 /* ----contact us---- */
