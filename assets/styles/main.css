@@ -40,13 +40,13 @@ a {
 /* ---- Header ---- */
 #main-header {
     background: #fff;
-    padding: 12px 0;
+    padding: 6px 0;
     /* ----for sticky header---- */
     position: fixed;
     width: 100%;
     z-index: 99999;
     box-shadow: 0px 0px 15px grey;
-    /* opacity: .95; */
+    opacity: .95;
 }
 
 #main-header .bcos-container {
@@ -92,7 +92,8 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 570px;
+    height: 500px;
+    margin-top: 54px;
 }
 
 #intro .cta {
@@ -119,16 +120,19 @@ a {
 
 #intro .cta p {
     margin-bottom: 1.5em;
+    margin-top: 5px;
+    font-size: 20px;
 }
 
 #intro .cta .button {
     display: flex;
     align-items: center;
-    padding: 10px 30px;
+    padding: 0px 20px;
     color: #fff;
     background-color: #1f54ff;
-    border-radius: 30px;
+    border-radius: 5px;
     text-decoration: none;
+    height: 38px;
 }
 
 /* ---- short line---- */
@@ -214,8 +218,8 @@ a {
 #characteristics {
     display: flex;
     flex-direction: column;
-    padding: 4em 0;
-    background-color: #f2f5f7;
+    padding: 2em 0;
+    background-color: #fff;
 }
 
 @media (max-width: 768px) {
@@ -247,12 +251,10 @@ a {
 @media (max-width: 768px) {
     #characteristics .characteristics-title_left {
         display: block;
-
     }
 
     #characteristics .characteristics-title_right {
         float: none;
-
     }
 }
 
@@ -260,22 +262,24 @@ a {
     font-size: 12px;
 }
 
+.card-body {
+    padding: 0 1rem !important;
+}
+
 #characteristics .card {
-    border: none;
     background: none;
 }
 
 #characteristics .card img {
     margin: 0 auto;
-    width: 70px;
-    height: 70px
+    height: 215px
 }
 
 #characteristics h5 {
     color: #0037a9;
     display: block;
     text-align: center;
-    margin-bottom: 0.35em;
+    margin-bottom: 0.5em;
     font-weight: bold;
     font-size: 16px;
 }
@@ -283,12 +287,14 @@ a {
 #characteristics p {
     color: #4a4f66;
     display: block;
-    text-align: center;
+    text-align: left;
     font-size: 12px;
+    margin-bottom: 2rem;
 }
 
 #characteristics .whitepaper-container {
     text-align: center;
+    margin-top: 20px;
 }
 
 #characteristics .whitepaper {
