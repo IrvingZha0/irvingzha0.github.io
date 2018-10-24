@@ -291,7 +291,7 @@ a {
 
 #characteristics .card img {
     margin: 0 auto;
-    height: 215px
+    height: 200px
 }
 
 #characteristics h5 {
@@ -395,10 +395,9 @@ a {
 
 /* ---- organizations ---- */
 #organizations {
-    background: #fff;
+    background: #fafafa;
     flex: 1;
     padding: 0.5em 0;
-    text-align: center;
 }
 
 #organizations h2 {
@@ -516,24 +515,25 @@ a {
     }
 }
 
-.join-community_block {
-    padding: 0 15px;
-}
-
-@media (max-width: 768px) {
-    .join-community_block {
-        padding: 0;
-    }
-}
-
 #about-us h3 {
     color: #0037a9;
 }
+/* -----join us---- */
+#join-us{
+    padding: 2em 0;
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 90%;
+}
 
+#join-us h2{
+    color: #0037a9;
+
+}
 /* ----contact us---- */
 
 #contact-us {
-    background: #f2f5f7;
+    background: #f2f2f2;
 }
 
 #contact-us .contact-us_container {
