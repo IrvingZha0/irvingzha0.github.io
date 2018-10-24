@@ -83,14 +83,14 @@ a {
     font-size: 16px !important;
 }
 
-.contact-us-botton {
+.contact-us_botton {
     display: flex;
     align-items: center;
-    padding: 0px 20px;
+    padding: 0 10px;
     color: #fff !important;
     background-color: #1f54ff;
     border-radius: 5px;
-    text-decoration: none;
+    text-decoration: none !important;
     height: 30px;
 }
 
@@ -281,9 +281,6 @@ a {
 
 .card {
     border: none !important;
-}
-
-.card-body {
     padding: 0 1rem !important;
 }
 
@@ -373,56 +370,19 @@ a {
     margin-top: 20px;
 }
 
-.usecase-body .ub-bg {
-    position: relative;
-    height: 300px;
-    margin-bottom: 30px;
-    /* opacity: .95; */
-}
-
-.usecase-body .supply-chain {
-    background-image: url('../supplychain_web.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.usecase-body .arbitration {
-    background-image: url('../arbitration_web.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.usecase-body .clubcard {
-    background-image: url('../clubcard.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
 
 
-.usecase-body .usecase-body_content {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-.usecase-body .usecase-body_content h2 {
-    color: #fff;
-    text-align: center;
-    margin: 0 auto;
-    display: block;
-}
-
-.usecase-body .usecase-body_content p {
-    color: #fff;
-    font-size: 14px;
-    max-width: 400px;
-    text-align: center;
-    margin: 20px auto;
+.usecase-body {
     width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
 }
+
+.usecase-body .case-title {
+    color: #0037a9;
+    text-align: center;
+}
+
 
 .more-cases i {
     font-size: 16px;
@@ -534,24 +494,36 @@ a {
 
 #about-us .about-fb_container {
     display: inline-block;
+    padding: 0;
 }
 
 #about-us .about-fb_container h2 {
     color: #0037a9;
 }
 
-.join-us_block,
-.join-community_block,
 .follow-fb_block {
     border: 1px #f2f5f7 solid;
     margin: 10px;
-    box-shadow: 0 5px 15px #f2f5f7;
+    box-shadow: 0 5px 15px lightgrey;
     padding: 0 0 10px 0px;
+    margin-top: 65px;
+    margin-left: 6%;
 }
 
-.follow-fb_block {
-    margin-top: 65px;
-    margin-left: 7.4%;
+@media (max-width: 767px) {
+    .follow-fb_block {
+        margin: 0;
+    }
+}
+
+.join-community_block {
+    padding: 0 15px;
+}
+
+@media (max-width: 768px) {
+    .join-community_block {
+        padding: 0;
+    }
 }
 
 #about-us h3 {
