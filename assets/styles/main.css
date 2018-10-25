@@ -403,6 +403,9 @@ a {
     text-align: center;
     margin: 25px 0;
 }
+.more-cases a{
+    font-size: 16px;
+}
 
 /* ---- organizations ---- */
 #organizations {
@@ -451,7 +454,7 @@ a {
 .partners-content .list li {
     vertical-align: middle;
     float: left;
-    width: 15%;
+    width: 12%;
     height: auto;
     margin: 0 15px;
 }
