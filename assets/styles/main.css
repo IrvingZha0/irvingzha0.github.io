@@ -517,6 +517,12 @@ a {
     color: #0037a9;
 }
 
+#about-us .about-fb_container p {
+    color: #4a4f66;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
 .follow-fb_block {
     border: 1px #f2f5f7 solid;
     margin: 10px;
