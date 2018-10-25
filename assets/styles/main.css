@@ -380,9 +380,20 @@ a {
 
 .usecase-body .case-title {
     color: #0037a9;
+    display: block;
     text-align: center;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    font-size: 16px;
 }
 
+.case-text {
+    margin: 0 0 20px;
+    color: #4a4f66;
+    display: block;
+    text-align: left;
+    font-size: 12px;
+}
 
 .more-cases i {
     font-size: 16px;
@@ -390,7 +401,7 @@ a {
 
 .more-cases {
     text-align: center;
-    margin-bottom: 25px;
+    margin: 25px 0;
 }
 
 /* ---- organizations ---- */
@@ -425,7 +436,6 @@ a {
 
 .partners-content {
     width: 80%;
-    margin: 0 auto;
 }
 
 .partners-content .list {
@@ -434,7 +444,9 @@ a {
     margin-bottom: 15px;
     text-align: center;
     display: block;
+    margin-left: -50px;
 }
+
 
 .partners-content .list li {
     vertical-align: middle;
@@ -458,6 +470,11 @@ a {
 }
 
 @media (max-width: 768px) {
+
+    .partners-content {
+        margin: 0 auto;
+
+    }
 
     .partners-content .list {
         margin-left: -30px;
@@ -518,18 +535,20 @@ a {
 #about-us h3 {
     color: #0037a9;
 }
+
 /* -----join us---- */
-#join-us{
+#join-us {
     padding: 2em 0;
     max-width: 1170px;
     margin: 0 auto;
     width: 90%;
 }
 
-#join-us h2{
+#join-us h2 {
     color: #0037a9;
 
 }
+
 /* ----contact us---- */
 
 #contact-us {
