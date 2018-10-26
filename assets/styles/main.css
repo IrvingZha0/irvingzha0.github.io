@@ -368,7 +368,7 @@ a {
 .usecase-container {}
 
 .usecase_header {
-    padding: 2em 0;
+    padding: 2em 0 0.5em 0;
     background-color: #fff;
 }
 
