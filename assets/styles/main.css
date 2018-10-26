@@ -219,7 +219,13 @@ a {
 
 .vision-body_right img {
     height: 400px;
-    margin: -80px 0 0 0;
+    margin-top: -80px;
+}
+
+@media (max-width: 1024px) {
+    .vision-body_right img {
+        margin: 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -299,6 +305,7 @@ a {
 .card-body {
     padding: 1.25rem 0 0 0 !important;
 }
+
 #characteristics h5 {
     color: #0037a9;
     display: block;
