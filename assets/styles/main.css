@@ -319,14 +319,8 @@ a {
 #characteristics p {
     color: #4a4f66;
     display: block;
-    text-align: left;
-    font-size: 12px;
-}
-
-@media (max-width: 1024px) {
-    #characteristics p {
-        text-align: center;
-    }
+    text-align: center;
+    font-size: 14px;
 }
 
 #characteristics .whitepaper-container {
@@ -415,7 +409,7 @@ a {
     color: #4a4f66;
     display: block;
     text-align: left;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .more-cases i {
