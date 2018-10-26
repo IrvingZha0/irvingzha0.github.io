@@ -157,7 +157,7 @@ a {
 
 /* ---- Vision ---- */
 #vision {
-    padding: 1em 0;
+    padding: 2em 0;
     background-color: #fafafa;
 }
 
@@ -235,7 +235,7 @@ a {
 #characteristics {
     display: flex;
     flex-direction: column;
-    padding: 20px 0 0 0;
+    padding: 3em 0 0 0;
     background-color: #fff;
 }
 
@@ -279,25 +279,32 @@ a {
     font-size: 12px;
 }
 
-.card {
-    border: none !important;
-    padding: 0 1rem !important;
+.my-card {
+    border: none;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
-#characteristics .card {
+#characteristics .my-card {
     background: none;
-    margin-bottom: 20px;
+    margin-bottom: 2em;
 }
 
-#characteristics .card img {
+#characteristics .my-card img {
     margin: 0 auto;
+    width: 30%;
 }
 
+.card-body {
+    padding: 1.25rem 0 0 0 !important;
+}
 #characteristics h5 {
     color: #0037a9;
     display: block;
     text-align: center;
     margin-bottom: 0.5em;
+    margin-top: 0;
     font-weight: bold;
     font-size: 16px;
 }
@@ -307,7 +314,12 @@ a {
     display: block;
     text-align: left;
     font-size: 12px;
-    margin-bottom: 2rem;
+}
+
+@media (max-width: 1024px) {
+    #characteristics p {
+        text-align: center;
+    }
 }
 
 #characteristics .whitepaper-container {
@@ -326,20 +338,20 @@ a {
 }
 
 @media (min-width: 0) {
-    .card-deck .card {
-        flex: 0 0 calc(100% - 30px) !important;
+    .card-deck .my-card {
+        flex: 0 0 100%;
     }
 }
 
 @media (min-width: 768px) {
-    .card-deck .card {
-        flex: 0 0 calc(50% - 40px) !important;
+    .card-deck .my-card {
+        flex: 0 0 50%;
     }
 }
 
 @media (min-width: 1024px) {
-    .card-deck .card {
-        flex: 0 0 calc(25% - 30px) !important;
+    .card-deck .my-card {
+        flex: 0 0 20%;
     }
 }
 
@@ -382,8 +394,13 @@ a {
     display: block;
     text-align: center;
     margin-bottom: 0.5em;
+    margin-top: 0;
     font-weight: bold;
     font-size: 16px;
+}
+
+.case-body {
+    padding: 1.25rem;
 }
 
 .case-text {
@@ -400,9 +417,10 @@ a {
 
 .more-cases {
     text-align: center;
-    margin: 25px 0;
+    margin: 1em 0 3em 0;
 }
-.more-cases a{
+
+.more-cases a {
     font-size: 16px;
 }
 
@@ -410,7 +428,7 @@ a {
 #organizations {
     background: #fafafa;
     flex: 1;
-    padding: 0.5em 0;
+    padding: 1em 0;
 }
 
 #organizations h2 {
@@ -546,7 +564,7 @@ a {
 
 /* -----join us---- */
 #join-us {
-    padding: 2em 0;
+    padding: 1em 0 2em 0;
     max-width: 1170px;
     margin: 0 auto;
     width: 90%;
@@ -556,6 +574,7 @@ a {
     color: #0037a9;
 
 }
+
 #join-us p {
     color: #4a4f66;
     font-size: 16px;
