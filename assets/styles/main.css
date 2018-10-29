@@ -59,7 +59,8 @@ a {
 #main-header .logo {
     background-image: url('../logo.png');
     background-size: 170px;
-    height: 43px;
+    height: 46px;
+    background-repeat: no-repeat;
     width: 170px;
 }
 
@@ -104,7 +105,7 @@ a {
     background-position: center;
     background-size: cover;
     height: 500px;
-    margin-top: 54px;
+    margin-top: 58px;
 }
 
 #intro .cta {
