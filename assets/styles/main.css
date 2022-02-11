@@ -1,34 +1,126 @@
 /* -- usable codes start -- */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@100;900&display=swap');
 
-html,
-body,
-div,
-span,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-code,
-del,
-dfn,
-em,
-img,
-q,
-dl,
-dt,
-dd,
-ol,
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+/*custom properties*/
+:root
+{    
+    --fw-reg:300;
+    --fw-bold:900;
+
+    --clr-light:#fff;
+    --clr-dark:#303030;
+    --clr-accent:#16e0bd;
+
+    --fs-h1:3rem;
+    --fs-h2:2.25rem;
+    --fs-h3:1.25rem;
+    --fs-body:1rem;
+}
+@media(min-width:800px)
+{
+    :root{
+    --fs-h1:4.25rem;
+    --fs-h2:3.95rem;
+    --fs-h3:1.75rem;
+    --fs-body:1.5rem;
+    }
+}
+/*general styles*/
+body{
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--fs-body);
+    color: var(--clr-dark);
+    margin: 40px auto;
+    padding: 0 200px;
+    line-height: 1.6;
+}
+section
+{
+    padding: 5em 2em;
+}
+img
+{
+    display: block;
+    max-width: 100%;
+}
+h1,h2,h3{
+    line-height: 1;
+    margin: 0;
+}
+h1{
+    font-size: var(--fs-h1);
+}
+h2{
+    font-size: var(--fs-h2);
+}
+h3{
+    font-size: var(--fs-h3);
+}
+/* header*/
+nav
+{
+    display: none;
+}
+.title
+{
+   margin-bottom: .25em;
+}
+.title-intro
+{
+    font-weight: var(--fw-reg);
+}
+.title-intro span
+{
+    font-weight:var(--fw-bold);
+    display: block;
+}
+.sub-title
+{
+    margin: 0;
+}
+.sub-title-intro,
+.sub-title-about
+{
+    background: var(--clr-accent);
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+
+.introduction
+{
+    position: relative;
+    margin-bottom: 3em;
+   
+}
+
+@media(min-width:600px)
+{
+    .introduction
+    {
+        display: grid;
+        grid-column-gap:5em ;
+        width: min-content;
+        margin: 3em auto;
+        grid-template-areas: 
+        "img title"
+        "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+    .intro-image
+    {
+        grid-area: img;
+        min-width: 350px;
+    }
+}
+
+
 ul,
 li,
 fieldset,
@@ -47,8 +139,6 @@ article,
 aside,
 dialog,
 figure,
-footer,
-header,
 hgroup,
 nav,
 section {
@@ -102,8 +192,13 @@ body {
 }
 
 /*-----*/
-
+.calendarWrapper {
+    position: absolute;
+    right: 0;
+    top: 3em;
+}
 .signboard {
+
     width: 100px;
     height: 100px;
     margin: auto;
